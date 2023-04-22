@@ -11,7 +11,7 @@ void display()
     cout << "|          ---------------            |" << endl;
     cout << "|         | o  -------  o |           |" << endl;
     cout << "|          ---------------            |" << endl;
-    cout << "|                                     |" << endl;
+    cout << "|                                     |" << endl; 
     cout << "|                                     |" << endl;
     cout << ".-------------------------------------." << endl;
 }

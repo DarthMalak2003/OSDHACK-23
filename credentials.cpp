@@ -1,8 +1,12 @@
 #include <iostream>
+#include <fstream>
+#include <string>
 using namespace std;
 
 int main()
 {
+    int choice;
+    cout<<"select a choice-\n1.Register"
     string name;
     string pw;
     int login=0;

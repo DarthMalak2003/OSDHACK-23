@@ -7,8 +7,6 @@
 #pragma comment(lib, "winmm.lib")
 using namespace std;
 
-string arr[] = {"Pyar Hua Iqrar Hua.wav","Mere Sapno Ki Rani.wav","Lag Jaa Gale.wav","Tere Jaisa Yaar.wav","In Ankhon Ki Masti.wav","Blackmail.wav"};
-
 void AudioLoop1()
 {
 	cout << "Enter 1 for Pyar Hua Iqrar Hua" << endl;

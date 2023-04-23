@@ -1,4 +1,6 @@
 #include <iostream>
+#include<windows.h>
+#include <stdlib.h>
 #include <cstdlib>
 #include <ctime>
 #include <unistd.h>
@@ -26,7 +28,7 @@ void generateCassettePositions(int cassettePositions[], int maxPosition) {
 // Function to display the cassette player and cassettes
 void displayCassettePlayer(int cassettePositions[], int playerPosition) {
     for (int i = 0; i < NUM_FRAMES; i++) {
-        system("clear");  // Clear the terminal screen
+        system("CLS");  // Clear the terminal screen
 
         // Display the cassette player
         cout << "  " << string(MAX_ROTATION_ANGLE, '-') << "  " << endl;
@@ -45,6 +47,8 @@ void displayCassettePlayer(int cassettePositions[], int playerPosition) {
 }
 
 int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
     int cassettePositions[NUM_CASSETTES];  // Array to store cassette positions
     int playerPosition = 0;  // Initial position of the cassette player
 

@@ -3,13 +3,12 @@
 #include <vector>
 using namespace std;
 
-// Class to represent a virtual cassette
 class VirtualCassette {
 private:
-    std::string name; // Name of the cassette
-    std::vector<std::string> songs; // List of songs in the cassette
-    bool isPlaying; // Whether the cassette is currently playing
-    int currentSongIndex; // Index of the currently playing song
+    std::string name; 
+    std::vector<std::string> songs; 
+    bool isPlaying; 
+    int currentSongIndex; 
 
 public:
     VirtualCassette(const std::string& cassetteName) {
@@ -68,20 +67,16 @@ public:
 };
 
 int main() {
-    // Create a virtual cassette
     VirtualCassette cassette("My Mixtape");
 
-    // Load songs into the cassette
     cassette.addSong("Song 1");
     cassette.addSong("Song 2");
     cassette.addSong("Song 3");
 
-    // Play songs
     cassette.play();
     cassette.nextSong();
     cassette.nextSong();
 
-    // Eject the cassette
     cassette.ejectCassette();
 
     return 0;
